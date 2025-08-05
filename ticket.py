@@ -7,7 +7,7 @@ def main():
         print("Error: Title ID should be 16 characters long.")
         return
 
-    url = f"http://ccs.cdn.wup.shop.nintendo.net/ccs/ticket/{title_id}.tik"
+    url = f"http://ccs.cdn.wup.shop.nintendo.net/ccs/download/{title_id}/ticket"
     save_dir = os.path.join(os.getcwd(), "ticket")
     os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, f"{title_id}.tik")
